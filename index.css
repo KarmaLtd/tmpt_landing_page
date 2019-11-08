@@ -45,13 +45,14 @@ html, body {
     justify-content: center;
 }
 
-#link-container * {
-    margin: 8px;
+#link-container span {
+    margin: 32px 0;
 }
 
 #link-container a {
     width: 50%;
     height: auto;
+    margin: 8px 0;
 }
 
 #link-container a img {
@@ -75,13 +76,17 @@ html, body {
         16px 16px 16px #9DE1DE;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     html, body {
         overflow-x: hidden;
     }
 
     #main-container {
         flex-direction: column;
+    }
+
+    #image-container img {
+        height: 350px;
     }
 
     #download-now {
