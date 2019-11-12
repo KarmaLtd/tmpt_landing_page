@@ -13,7 +13,7 @@ deploy:
   access_key_id: "$AWS_ACCESS_KEY_ID"
   secret_access_key: "$AWS_SECRET_ACCESS_KEY"
   bucket: "$AWS_BUCKET_NAME"
-  local-dir: dist
+  local-dir: $TRAVIS_BUILD_DIR
   region: eu-west-2
   skip_cleanup: true
   acl: public_read
