@@ -5,6 +5,7 @@ install:
 - npm install -g travis-ci-cloudfront-invalidation
 notifications:
   email: false
+script: 'true'
 git:
   depth: false
 deploy:
